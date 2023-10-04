@@ -1,18 +1,29 @@
-let butt1, butt2, butt3;
+let button;
+let press;
+let img;
 
-function setup() {
-  noCanvas();
-
-//   let butt1 = createButton("click me");
-//   button.mouseClicked(function() {clicked(1)});
-//   let butt2 = createButton("click too");
-//   button.mouseClicked(function() {clicked(2)});
-//   let butt3 = createButton("click 3");
-//   button.mouseClicked(function() {clicked(3)});
-// }
-
-// function clicked(num){
-// console.log("clicked" + num);
-// }
+function preload(){
+  img = loadImage("like.png");
 }
 
+function setup(){
+  noCanvas();
+
+  button = createButton("click");
+  button.mouseClicked(buttonclicked);
+  button.doubleClicked(buttonclicked);
+
+  press.mouseClicked(pressed);
+
+  // button.mousePressed(clickedButton);
+  // button.width = (Width in pixels)
+  // button.height = (Height in pixels)
+
+  // let img = createImg("assets/ads-02.png")
+  // img.position(50, 5)
+}
+
+function mouseClicked(){
+  let img = createImg("assets/ads-02.png")
+  img.position(50, 1)
+}
