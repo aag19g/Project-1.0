@@ -1,4 +1,5 @@
 let button;
+let button2;
 let press;
 let img;
 
@@ -9,18 +10,12 @@ function preload(){
 function setup(){
   noCanvas();
 
-  button = createButton("click");
+  button = createButton("");
+  button.position(246,664);
   button.mouseClicked(buttonclicked);
-  button.doubleClicked(buttonclicked);
 
-  press.mouseClicked(pressed);
-
-  // button.mousePressed(clickedButton);
-  // button.width = (Width in pixels)
-  // button.height = (Height in pixels)
-
-  // let img = createImg("assets/ads-02.png")
-  // img.position(50, 5)
+  button2 = createButton("clear");
+  button2.mousePressed(clearAd);
 }
 
 function mouseClicked(){
