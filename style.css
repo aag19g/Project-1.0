@@ -3,10 +3,10 @@ html, body {
   padding: 0;
 }
 
-/* button {     
+button {     
   background-color: Transparent;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
   overflow: hidden;        
-} */
+}

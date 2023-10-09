@@ -2,9 +2,8 @@ let button;
 let button2;
 let button3;
 let button4;
-let ads = [];
-let numAds = 4;
 let img;
+let adDisplayed = false;
 
 function setup(){
   noCanvas();
@@ -27,13 +26,25 @@ function setup(){
 }
 
 function buttonClicked(){
-  let ad1 = createImg("assets/ads01.png");
-  let ad2 = createImg("assets/ads02.png");
-  let ad3 = createImg("assets/ads03.png");
-  let ad4 = createImg("assets/ads04.png");
-  ads = [ads1,ads2,ads3,ads4];
-  let randoImg = randome(ads)
-  // let img = createImg("assets/ads01.png")
-  // img.position(50, 1)
-  image(randoImg,50, 1)
+  console.log("cliked");
+
+  let ads = [
+    "assets/ads01.png",
+    "assets/ads02.png",
+    "assets/ads03.png",
+    "assets/ads04.png",
+  ];
+
+  let randomIndex = floor(random(ads.length));
+  let randomImg = ads[randomIndex];
+  img = createImg(randomImg)
+  img.position(50, 1)
+
+  img.mousePressed(clearImage);
+}
+
+function clearImage(){
+  if (img) {
+    img.remove();
+  }
 }
