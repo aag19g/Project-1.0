@@ -3,7 +3,6 @@ let button2;
 let button3;
 let button4;
 let img;
-let adDisplayed = false;
 
 function setup(){
   noCanvas();
@@ -48,3 +47,4 @@ function clearImage(){
     img.remove();
   }
 }
+
