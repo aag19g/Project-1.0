@@ -4,11 +4,11 @@ let button3;
 let button4;
 let img;
 let button5;
-// let imgPost;
+let imgPost;
 
-// function preload(){
-//   imgPost = loadImage('post5.png');
-// }
+function preload(){
+  imgPost = loadImage('post5.png');
+}
 
 function setup(){
   noCanvas();
