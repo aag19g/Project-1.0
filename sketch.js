@@ -34,7 +34,7 @@ function setup(){
   button4.mouseClicked(buttonClicked2);
 
   button5 = createButton(">");
-  button5.position(745, 400)
+  button5.position(780, 400)
   button5.mouseClicked(buttonPressed)
 }
 
@@ -54,7 +54,6 @@ function buttonClicked(){
   img.position(50, 1)
 
   img.mousePressed(clearImage);
-
 
 }
 
