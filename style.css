@@ -8,5 +8,10 @@ button {
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
-  overflow: hidden;        
+  overflow: hidden;     
+}
+p {
+  position: absolute;
+  left: 35.3px;
+  top: 170px; 
 }
